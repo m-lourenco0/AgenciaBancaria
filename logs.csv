@@ -1,0 +1,4 @@
+Nome Cliente,Tipo,Senha,Caixa,Dia Atendimento,Hora Chegada,Hora Saída,Tempo de Atendimento (seg)
+Marcelo,Normal,1,1,2022-04-11,02:17:21.827483,02:17:27.205575,5
+Junin,Preferencial,1,6,2022-04-11,02:25:54.213940,02:25:58.931883,4
+Joaozinho,Normal,1,1,2022-04-11,02:32:53.570456,02:33:29.555375,35

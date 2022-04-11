@@ -9,12 +9,19 @@ class Atendimento:
         self.preferencial = preferencial
         self.data_inicio = datetime.now()
         self.data_fim = None
+        self.caixa = None
 
     def atender(self):
         self.atendimento = True
 
     def finalizar(self):
         self.atendimento = False
+
+    def set_caixa(self, numero):
+        self.caixa = numero
+
+    def get_tipo(self):
+        return 'Preferencial' if self.preferencial else 'Normal'
 
     def get_senha(self):
         return self.senha
@@ -23,5 +30,5 @@ class Atendimento:
         return self.nome
 
     def imprime_dados(self):
-        tipo = 'Preferencial' if self.preferencial else 'Normal'
+        tipo = Atendimento.get_tipo(self)
         print(f'Senha: {self.senha}\nNome: {self.nome}\nTipo: {tipo}\nData chegada: {self.data_inicio}\n')

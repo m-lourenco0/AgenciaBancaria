@@ -8,13 +8,10 @@ class Fila:
         self.fila.append(elemento)
 
     def remover(self, elemento):
-        return self.fila.remove(elemento)
+        return self.fila.pop(elemento)
 
     def tamanho(self):
         return len(self.fila)
-
-    def esta_vazia(self):
-        return self.tamanho() == 0
 
     def gerar_senha(self):
         self.senha += 1
